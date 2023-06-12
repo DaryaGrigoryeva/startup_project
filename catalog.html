@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог услуг</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="_container header__container">
+                <div class="header__leftpart">
+                    <!-- <img class="leftpart__menu-btn" src="images/menu-burger.svg" alt="" onclick="openNav()"> -->
+                    <button class="leftpart__menu-btn" onclick="openNav()">&#9776;</button>
+                    <a href="index.html" class="leftpart__logo">
+                        Я.САМ
+                    </a>
+                </div>
+                <div class="header__rightpart">
+                    <div class="rightpart__contacts">
+                        <p class="contacts__number">+7(999)999-99-99</p>
+                        <p class="contacts__subarticle">Если есть вопрос - звони</p>
+                    </div>
+                    <!-- <p class="rightpart__login"><a href="login_form.html">Войти</a>/<a href="register_form.html">Регистрация</a></p> -->
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="catalog__search">
+                <div class="_content catalog__search__content">
+                    <div class="catalog-btn">
+                        <button onclick="openCatalogMenu()">Каталог <img src="images/catalog-arrow.svg" alt="" class="catalog-btn-img"></button>
+                        <ul id="catalogmenu" class="catalog__menu-list">
+                            <li><a id="c1" class="catalog__menu-item" href="#">IT-сфера</a>
+                            <ul id="c1-1" class="catalog__menu-sublist">
+                                <li class="catalog__menu-subitem-title">IT-сфера</li>
+                                <li class="catalog__menu-subitem"><a href="#">Администрирование</a></li>
+                                <li class="catalog__menu-subitem"><a href="#">Анализ данных</a></li>
+                                <li class="catalog__menu-subitem"><a href="#">Веб-мастер</a></li>
+                                <li class="catalog__menu-subitem"><a href="#">Вёрстка и дизайн</a></li>
+                                <li class="catalog__menu-subitem"><a href="#">Компьютерный мастер</a></li>
+                                <li class="catalog__menu-subitem"><a href="#">Обработка данных</a></li>
+                                <li class="catalog__menu-subitem"><a href="#">Программист</a></li>
+                                <li class="catalog__menu-subitem"><a href="#">Техническая поддержка и прочее</a></li>
+                            </ul></li>
+                            <li><a id="c2" class="catalog__menu-item" href="#">Авто</a>
+                                <ul id="c2-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Авто</li>
+                                    <li class="catalog__menu-subitem"><a href="#">Автомойка</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Автосервис</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Автоэвакуация и буксировка</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Водитель</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Перевозка грузов</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Перевозка пассажиров</a></li>
+                                </ul></li>
+                            <li><a id="c3" class="catalog__menu-item" href="#">Аренда</a>
+                                <ul id="c3-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Аренда</li>
+                                    <li class="catalog__menu-subitem"><a href="#">Аренда квартир</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Аренда машин</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Предоставление лицензий</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Прокат</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Услуги по временному проживанию или хранению</a></li>
+                                </ul></li>
+                            <li><a id="c4" class="catalog__menu-item" href="#">Дом</a>
+                                <ul id="c4-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Дом</li>
+                                    <li class="catalog__menu-subitem"><a href="#">Бытовые услуги</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Ведение хозяйства</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Гувернантка</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Доставка</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Няня</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Сиделка</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Социальная помощь</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Сторож</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Уборка и клининг</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Химчистка</a></li>
+                                </ul></li>
+                            <li><a id="c5" class="catalog__menu-item" href="#">Животные</a>
+                                <ul id="c5-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Животные</li>
+                                    <li class="catalog__menu-subitem"><a href="#">Вакцинация</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Груминг</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Дрессировщик</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Кинология</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Передержка</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Уход за животными</a></li>
+                                </ul></li>
+                            <li><a id="c6" class="catalog__menu-item" href="#">Здоровье</a>
+                                <ul id="c6-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Здоровье</li>
+                                    <li class="catalog__menu-subitem"><a href="#">Консультирование</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Диетолог</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Логопед</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Массажист</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Психолог</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Тренер</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Инструктор</a></li>
+                                </ul></li>
+                            <li><a id="c7" class="catalog__menu-item" href="#">Информационные услуги</a>
+                                <ul id="c7-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Информационные услуги</li>
+                                    <li class="catalog__menu-subitem"><a href="#">Исследования</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Маркетинг</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Реклама</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Обрядовые услуги</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Опросы</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Сбор мнений</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Переводчик</a></li>
+                                </ul></li>
+                            <li><a id="c8" class="catalog__menu-item" href="#">Красота</a>
+                                <ul id="c8-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Красота</li>
+                                    <li class="catalog__menu-subitem"><a href="#">Консультирование</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Косметолог</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Маникюр</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Педикюр</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Модель</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Парикмахер</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Стилист</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Тату и пирсинг</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Эпиляция</a></li>
+                                </ul></li>
+                            <li><a id="c9" class="catalog__menu-item" href="#">Обучение</a>
+                                <ul id="c9-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Обучение</li>
+                                    <li class="catalog__menu-subitem"><a href="#">Репетитор</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Тренер</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Учитель</a></li>
+                                </ul></li>
+                            <li><a id="c10" class="catalog__menu-item" href="#">Одежда</a>
+                                <ul id="c10-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Одежда</li>
+                                    <li class="catalog__menu-subitem"><a href="#">Модельер</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Дизайнер</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Пошив</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Ткани</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Кройка и шитье</a></li>
+                                </ul></li>
+                            <li><a id="c11" class="catalog__menu-item" href="#">Природа</a>
+                                <ul id="c11-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Природа</li>
+                                    <li class="catalog__menu-subitem"><a href="#">Благоустройство территории</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Животноводство</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Лес</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Охота</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Рыбалка</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Переработка отходов</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Приём или сдача лома</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Сельскохозяйственные услуги</a></li>
+                                </ul></li>
+                            <li><a id="c12" class="catalog__menu-item" href="#">Прочее</a>
+                                <ul id="c12-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Прочее</li>
+                                    <li class="catalog__menu-subitem"><a href="#">Писатель</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Копирайтер</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Грузчик</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Курьер</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Носильщик</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Обеспечение безопасности</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Платные туалеты</a></li>
+                                </ul></li>
+                            <li><a id="c13" class="catalog__menu-item" href="#">Развлечения</a>
+                                <ul id="c13-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Развлечения</li>
+                                    <li class="catalog__menu-subitem"><a href="#">Аниматор</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Артист</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Певец</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Музыкант</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Ведущий</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Шоумен</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Тамада</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Гид</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Экскурсовод</a></li>
+                                </ul></li>
+                            <li><a id="c14" class="catalog__menu-item" href="#">Ремонт</a>
+                                <ul id="c14-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Ремонт</li>
+                                    <li class="catalog__menu-subitem"><a href="#">Дизайн</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Отделка</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Бытовой ремонт</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Реставрация</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Сантехник</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Ремонт бытовой техники</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Электрик</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Строительство</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Техобслуживание</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Ремонт квартир</a></li>
+                                </ul></li>
+                            <li><a id="c15" class="catalog__menu-item" href="#">Сделай сам</a>
+                                <ul id="c15-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Сделай сам</li>
+                                    <li class="catalog__menu-subitem"><a href="#">Кузнец</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Столяр</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Плотник</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Производственные услуги</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Металлообработка</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Проектирование</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Услуги по сборке</a></li>
+                                </ul></li>
+                            <li><a id="c16" class="catalog__menu-item" href="#">Спорт</a>
+                                <ul id="c16-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Спорт</li>
+                                    <li class="catalog__menu-subitem"><a href="#">Консультирование</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Массажист</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Тренер</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Инструктор</a></li>
+                                </ul></li>
+                            <li><a id="c17" class="catalog__menu-item" href="#">Торговля самостоятельно произведённым товаром</a>
+                                <ul id="c17-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Торговля самостоятельно произведённым товаром</li>
+                                    <li class="catalog__menu-subitem"><a href="#">Продукция собственного производства</a></li>
+                                </ul></li>
+                            <li><a id="c18" class="catalog__menu-item" href="#">Финансы</a>
+                                <ul id="c18-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Финансы</li>
+                                    <li class="catalog__menu-subitem"><a href="#">Бухгалтер</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Консультированиех</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Страховые услуги</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Бухгалтерия</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Риелтор</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">Финансовые услуги</a></li>
+                                </ul></li>
+                            <li><a id="c19" class="catalog__menu-item" href="#">Фото, видео, печать</a>
+                                <ul id="c19-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Фото, видео, печать</li>
+                                    <li class="catalog__menu-subitem"><a href="#">издательские услуги</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">оцифровка</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">полиграфия</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">оператор</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">фотограф</a></li>
+                                    <li class="catalog__menu-subitem"><a href="#">художник</a></li>
+                                </ul></li>
+                            <li><a id="c20" class="catalog__menu-item" href="#">Юристы</a>
+                                <ul id="c20-1" class="catalog__menu-sublist">
+                                    <li class="catalog__menu-subitem-title">Юристы</li>
+                                </ul></li>
+                        </ul>
+                    </div>
+                    <input class="catalog__search-input" type="search" name="" id="">
+                    <button class="catalog__search-btn" type="submit"><img src="images/search-loop.svg" alt="" class="catalog__search-btn-img"></button>
+                </div>
+            </section>
+            <section class="main__catalog">
+                <div class="_container main__catalog__container">
+                    <div class="main__catalog__filters">
+                        <p class="filter__title-cost">Цена</p>
+                        <div class="filter__cost">
+                            <p>От</p>
+                            <input type="number" name="" id="">
+                            <p>До</p>
+                            <input type="number" name="" id="">
+                        </div>
+                    </div>
+                    <div class="main__catalog__items">
+                        <div class="main__catalog__item">
+                            <div class="main__catalog__item-img" style="background-image: url('images/kitchen-catalog.jpg');"></div>
+                            <div class="main__catalog__item__description">
+                                <div class="catalog__description-title">Кухонный гарнитур на заказ</div>
+                                <div class="catalog__description-description">Собственное производство.
+                                    Сделаем замеры кухни, цвета фасадов на ваш выбор.
+                                    Работаем без посредников – самое выгодное предложение на рынке. Найдете дешевле – сделаем скидку!
+                                    Дизайн проект бесплатный.
+                                    Срок изготовления 20-30 дней.
+                                    Как нас найти? ул. Индустриальная 46 стр. 1</div>
+                            </div>
+                            <div class="main__catalog__item__buy">
+                                <div class="catalog__buy-cost">от 80 000 р</div>
+                                <!-- <a href="" class="catalog__buy-btn">Купить</a> -->
+                            </div>
+                        </div>
+                        <div class="main__catalog__item">
+                            <div class="main__catalog__item-img" style="background-image: url('images/remont-catalog.jpg');"></div>
+                            <div class="main__catalog__item__description">
+                                <div class="catalog__description-title">Ремонтные работы</div>
+                                <div class="catalog__description-description">Ремонт квартир, офисов, частных домов.
+                                    Ремонт любой сложности. В сроки! Оплата поэтапно.
+                                    Мы бригада из 6 человек. Частные мастера по ремонту.
+                                    Здравствуйте меня зовут Джонибек, мы бригада из 6 человек. Частные мастера по ремонту.
+                                    Опыт работы более 10 лет, выполнено уже более 100 объектов.</div>
+                            </div>
+                            <div class="main__catalog__item__buy">
+                                <div class="catalog__buy-cost">1500 р<br>за услугу</div>
+                                <!-- <a href="" class="catalog__buy-btn">Купить</a> -->
+                            </div>
+                        </div>
+                        <div class="main__catalog__item">
+                            <div class="main__catalog__item-img" style="background-image: url('images/voditel-catalog.webp');"></div>
+                            <div class="main__catalog__item__description">
+                                <div class="catalog__description-title">Личный водитель</div>
+                                <div class="catalog__description-description">Водитель категории В.
+                                    Стаж 5 лет.
+                                    График работы - полный день.</div>
+                            </div>
+                            <div class="main__catalog__item__buy">
+                                <div class="catalog__buy-cost">100 000 р</div>
+                                <!-- <a href="" class="catalog__buy-btn">Купить</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="_container footer__container">
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Исполнителю</a></li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Заказчику</a></li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Пользовательское соглашение</a></li>
+                    </ul>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item"><a href="infoblock.html" class="footer__menu-link">Инфоблок</a></li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Блог/Журнал</a></li>
+                        <li class="footer__menu-item"><a href="questions.html" class="footer__menu-link">Частозадаваемые вопросы</a></li>
+                    </ul>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Контакты</a></li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Партнеры</a></li>
+                        <li class="footer__menu-item">
+                            <ul class="footer__menu-item-piclist">
+                                <li class="footer__menu-item-picitem">
+                                    <a href="https://vk.com/nvsulive" class="footer__menu-item-piclink"><img class="footer__menu-item-piclink__img" src="images/vk.svg" alt=""></a>
+                                </li>
+                                <li class="footer__menu-item-picitem">
+                                    <a href="https://vk.com/away.php?to=https%3A%2F%2Ft.me%2Fnvsunv&cc_key=" class="footer__menu-item-piclink"><img class="footer__menu-item-piclink__img" src="images/telegram.svg" alt=""></a>
+                                </li>
+                                <li class="footer__menu-item-picitem">
+                                    <a href="https://nvsu.ru/" class="footer__menu-item-piclink"><img class="footer__menu-item-piclink__img" src="images/nvsu.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="footer__copy">Проект создан при поддержке ФГБОУ ВО “Нижневартовский государственный университет”</p>
+
+            </div>
+        </footer>
+        <div class="_container nav__container">
+            <nav class="nav__menu" id="e1">
+                <ul class="menu__list">
+                    <li id="non" class="menu__item"><a href="#">Войти</a>/<a href="#">Зарегистрироваться</a></li>
+                    <li class="menu__item"><a href="#"><div class="menu__item-block">Заказчикам</div></a></li>
+                    <li class="menu__item"><a href="#"><div class="menu__item-block">Самозанятым</div></a></li>
+                    <li class="menu__item"><a href="infoblock.html"><div class="menu__item-block">Инфоблок</div></a></li>
+                    <li class="menu__item"><a href="#"><div class="menu__item-block">Партнеры</div></a></li>
+                    <li class="menu__item"><a href="questions.html"><div class="menu__item-block">Часто задаваемые вопросы</div></a></li>
+                    <li class="menu__item"><a href="#"><div class="menu__item-block">Связаться с нами</div></a></li>
+                    <li class="menu__item"><a href="#"><div class="menu__item-block">Блог/Журнал</div></a></li>
+                    <!-- <li class="menu__item">+7(999)999-99-99</li> -->
+                </ul>
+            </nav>
+        </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

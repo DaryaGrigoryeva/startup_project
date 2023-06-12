@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@400;500;700&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="_container header__container">
+          <div class="header__leftpart">
+            <!-- <img class="leftpart__menu-btn" src="images/menu-burger.svg" alt="" onclick="openNav()"> -->
+            <button class="leftpart__menu-btn" onclick="openNav()">
+              &#9776;
+            </button>
+            <a href="index.html" class="leftpart__logo"> Я.САМ </a>
+          </div>
+          <div class="header__rightpart">
+            <div class="rightpart__contacts">
+              <p class="contacts__number">+7(999)999-99-99</p>
+              <p class="contacts__subarticle">Если есть вопрос - звони</p>
+            </div>
+            <!-- <p class="rightpart__login">
+              <a href="login_form.html">Войти</a>/<a href="register_form.html"
+                >Регистрация</a
+              >
+            </p> -->
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="register">
+          <div class="_container register__container">
+            <h1 class="form-title">Регистрация</h1>
+            <div class="form-fields">
+              <div class="form-field">
+                <input id="surname-field" type="text" />
+                <label for="surname-field" class="placeholder">Фамилия</label>
+              </div>
+              <div class="form-field">
+                <input id="name-field" type="text" />
+                <label for="name-field" class="placeholder">Имя</label>
+              </div>
+              <div class="form-field">
+                <input id="patroname-field" type="text" />
+                <label for="patroname-field" class="placeholder"
+                  >Отчество</label
+                >
+              </div>
+              <div class="form-field">
+                <select name="gender" id="gender-field">
+                  <option class="select__option" value="no_selected">
+                    Не выбрано
+                  </option>
+                  <option class="select__option" value="male">Мужской</option>
+                  <option class="select__option" value="female">Женский</option>
+                </select>
+                <label for="gender-field" class="placeholder">Пол</label>
+              </div>
+              <div class="form-field">
+                <input
+                  id="date-field"
+                  type="date"
+                  max="2023-05-17"
+                  min="1950-01-01"
+                  value="data"
+                />
+                <label for="date-field" class="placeholder"
+                  >Дата рождения</label
+                >
+              </div>
+              <div class="form-field">
+                <select name="vid" id="vid-field">
+                  <option class="select__option" value="no_selected">
+                    Не выбрано
+                  </option>
+                  <option value="">Самозанятый</option>
+                  <option value="">Заказчик</option>
+                </select>
+                <label for="vid-field" class="placeholder">Роль</label>
+              </div>
+              <div class="form-field">
+                <input
+                  id="inn-field"
+                  type="tel"
+                  pattern="[0-9]{12}"
+                  maxlength="12"
+                />
+                <label for="inn-field" class="placeholder">ИНН</label>
+              </div>
+              <div class="form-field">
+                <select name="edu" id="edu-field">
+                  <option class="select__option" value="no_selected">
+                    Не выбрано
+                  </option>
+                  <option value="">Среднее специальное (диплом СПО)</option>
+                  <option value="">Бакалавриат</option>
+                  <option value="">Магистратура</option>
+                </select>
+                <label for="edu-field" class="placeholder">Образование</label>
+              </div>
+              <div class="form-field">
+                <select name="sfer" id="sfer-field">
+                  <option class="select__option" value="no_selected">
+                    Не выбрано
+                  </option>
+                  <option value="">IT-сфера</option>
+                  <option value="">Авто</option>
+                  <option value="">Аренда</option>
+                  <option value="">Дом</option>
+                  <option value="">Животные</option>
+                  <option value="">Здоровье</option>
+                  <option value="">Информационные услуги</option>
+                  <option value="">Красота</option>
+                  <option value="">Обучение</option>
+                  <option value="">Одежда</option>
+                  <option value="">Природа</option>
+                  <option value="">Прочее</option>
+                  <option value="">Развлечения</option>
+                  <option value="">Ремонт</option>
+                  <option value="">Сделай сам</option>
+                  <option value="">Спорт</option>
+                  <option value="">
+                    Торговля самостоятельно произведённым товаром
+                  </option>
+                  <option value="">Финансы</option>
+                  <option value="">Фото, видео, печать</option>
+                  <option value="">Юристы</option>
+                </select>
+                <label for="sfer-field" class="placeholder"
+                  >Сфера деятельности</label
+                >
+              </div>
+              <div class="form-field">
+                <input
+                  id="tel-field"
+                  class="tel-field"
+                  type="tel"
+                  pattern="+7([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  placeholder="+7(999) 999-99-99"
+                  maxlength="17"
+                />
+                <label for="tel-field" class="placeholder"
+                  >Номер телефона</label
+                >
+              </div>
+              <div class="form-field">
+                <input id="email-field" type="email" />
+                <label for="email-field" class="placeholder">Почта</label>
+              </div>
+              <div class="form-field">
+                <input id="password-field" type="password" />
+                <label for="password-field" class="placeholder">Пароль</label>
+                <button
+                  class="btn__pass js-btn-password"
+                  data-target="#password-field"
+                >
+                  <img src="images/eye.svg" alt="" />
+                </button>
+              </div>
+              <div class="form-field">
+                <input id="passwordcheck-field" type="password" />
+                <label for="passwordcheck-field" class="placeholder"
+                  >Подтвердить пароль</label
+                >
+                <button
+                  class="btn__pass js-btn-password"
+                  data-target="#passwordcheck-field"
+                >
+                  <img src="images/eye.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="form-buttons">
+              <button type="submit" class="form-button">
+                Зарегистрироваться
+              </button>
+              <a href="login_form.html" class="form-button"
+                >У меня уже есть аккаунт</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="_container footer__container">
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Исполнителю</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="catalog.html" class="footer__menu-link">Заказчику</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link"
+                  >Пользовательское соглашение</a
+                >
+              </li>
+            </ul>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="infoblock.html" class="footer__menu-link">Инфоблок</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Блог/Журнал</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="questions.html" class="footer__menu-link"
+                  >Часто задаваемые вопросы</a
+                >
+              </li>
+            </ul>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Контакты</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Партнеры</a>
+              </li>
+              <li class="footer__menu-item">
+                <ul class="footer__menu-item-piclist">
+                  <li class="footer__menu-item-picitem">
+                    <a
+                      href="https://vk.com/nvsulive"
+                      class="footer__menu-item-piclink"
+                      ><img
+                        class="footer__menu-item-piclink__img"
+                        src="images/vk.svg"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li class="footer__menu-item-picitem">
+                    <a
+                      href="https://vk.com/away.php?to=https%3A%2F%2Ft.me%2Fnvsunv&cc_key="
+                      class="footer__menu-item-piclink"
+                      ><img
+                        class="footer__menu-item-piclink__img"
+                        src="images/telegram.svg"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li class="footer__menu-item-picitem">
+                    <a href="https://nvsu.ru/" class="footer__menu-item-piclink"
+                      ><img
+                        class="footer__menu-item-piclink__img"
+                        src="images/nvsu.svg"
+                        alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <p class="footer__copy">
+            Проект создан при поддержке ФГБОУ ВО “Нижневартовский
+            государственный университет”
+          </p>
+        </div>
+      </footer>
+      <div class="_container nav__container">
+        <nav class="nav__menu" id="e1">
+          <ul class="menu__list">
+            <li id="non" class="menu__item">
+              <a href="login_form.html">Войти</a>/<a href="register_form.html"
+                >Зарегистрироваться</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="catalog.html"
+                ><div class="menu__item-block">Заказчикам</div></a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#"><div class="menu__item-block">Самозанятым</div></a>
+            </li>
+            <li class="menu__item">
+              <a href="infoblock.html"
+                ><div class="menu__item-block">Инфоблок</div></a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#"><div class="menu__item-block">Партнеры</div></a>
+            </li>
+            <li class="menu__item">
+              <a href="questions.html"
+                ><div class="menu__item-block">Часто задаваемые вопросы</div></a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#"
+                ><div class="menu__item-block">Связаться с нами</div></a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#"><div class="menu__item-block">Блог/Журнал</div></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

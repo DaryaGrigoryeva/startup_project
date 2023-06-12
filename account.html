@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@400;500;700&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="_container header__container">
+          <div class="header__leftpart">
+            <!-- <img class="leftpart__menu-btn" src="images/menu-burger.svg" alt="" onclick="openNav()"> -->
+            <button class="leftpart__menu-btn" onclick="openNav()">
+              &#9776;
+            </button>
+            <a href="index.html" class="leftpart__logo"> Я.САМ </a>
+          </div>
+          <div class="header__rightpart">
+            <div class="rightpart__contacts">
+              <p class="contacts__number">+7(999)999-99-99</p>
+              <p class="contacts__subarticle">Если есть вопрос - звони</p>
+            </div>
+            <!-- <p class="rightpart__login">
+              <a href="login_form.html">Войти</a>/<a href="register_form.html"
+                >Регистрация</a
+              >
+            </p> -->
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="account__first">
+          <div class="_container account__container-first">
+            <div class="account__first__info">
+              <div class="info__general">
+                <p class="info-title">Общая информация</p>
+                <ul class="info-list">
+                  <li class="info-item">ФИО: Иванов Иван Иванович</li>
+                  <li class="info-item">Возраст: 20</li>
+                  <li class="info-item">Роль: самозанятый</li>
+                </ul>
+              </div>
+              <div class="info__contact">
+                <p class="info-title">Контактная информация</p>
+                <ul class="info-list">
+                  <li class="info-item">Телефон: +7(999) 999-99-99</li>
+                  <li class="info-item">Почта: jdkdkd@mail.ru</li>
+                </ul>
+              </div>
+            </div>
+            <div class="account__first-avatar"></div>
+          </div>
+        </section>
+        <section class="account__second">
+          <div class="_container account__container-second">
+            <div class="info__extra">
+              <p class="info-title">Дополнительная информация</p>
+              <ul class="info-list">
+                <li class="info-item">Образование:</li>
+                <li class="info-item">
+                  Мои задания/чеки: <a href="" class="info-link">10</a>
+                </li>
+                <li class="info-item">Описание своих услуг:</li>
+              </ul>
+              <p class="info-usertext">Какой-то текст</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="_container footer__container">
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Исполнителю</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Заказчику</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link"
+                  >Пользовательское соглашение</a
+                >
+              </li>
+            </ul>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="infoblock.html" class="footer__menu-link">Инфоблок</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Блог/Журнал</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="questions.html" class="footer__menu-link"
+                  >Частозадаваемые вопросы</a
+                >
+              </li>
+            </ul>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Контакты</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Партнеры</a>
+              </li>
+              <li class="footer__menu-item">
+                <ul class="footer__menu-item-piclist">
+                  <li class="footer__menu-item-picitem">
+                    <a
+                      href="https://vk.com/nvsulive"
+                      class="footer__menu-item-piclink"
+                      ><img
+                        class="footer__menu-item-piclink__img"
+                        src="images/vk.svg"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li class="footer__menu-item-picitem">
+                    <a
+                      href="https://vk.com/away.php?to=https%3A%2F%2Ft.me%2Fnvsunv&cc_key="
+                      class="footer__menu-item-piclink"
+                      ><img
+                        class="footer__menu-item-piclink__img"
+                        src="images/telegram.svg"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li class="footer__menu-item-picitem">
+                    <a href="https://nvsu.ru/" class="footer__menu-item-piclink"
+                      ><img
+                        class="footer__menu-item-piclink__img"
+                        src="images/nvsu.svg"
+                        alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <p class="footer__copy">
+            Проект создан при поддержке ФГБОУ ВО “Нижневартовский
+            государственный университет”
+          </p>
+        </div>
+      </footer>
+      <div class="_container nav__container">
+        <nav class="nav__menu" id="e1">
+          <ul class="menu__list">
+            <li id="non" class="menu__item">
+              <a href="#">Войти</a>/<a href="#">Зарегистрироваться</a>
+            </li>
+            <li class="menu__item">
+              <a href="#"><div class="menu__item-block">Заказчикам</div></a>
+            </li>
+            <li class="menu__item">
+              <a href="#"><div class="menu__item-block">Самозанятым</div></a>
+            </li>
+            <li class="menu__item">
+              <a href="infoblock.html"
+                ><div class="menu__item-block">Инфоблок</div></a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#"><div class="menu__item-block">Партнеры</div></a>
+            </li>
+            <li class="menu__item">
+              <a href="questions.html"
+                ><div class="menu__item-block">Часто задаваемые вопросы</div></a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#"
+                ><div class="menu__item-block">Связаться с нами</div></a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#"><div class="menu__item-block">Блог/Журнал</div></a>
+            </li>
+            <!-- <li class="menu__item">+7(999)999-99-99</li> -->
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

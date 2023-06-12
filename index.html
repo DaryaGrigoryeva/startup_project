@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Я.САМ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@400;500;700&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="_container header__container">
+          <div class="header__leftpart">
+            <!-- <img class="leftpart__menu-btn" src="images/menu-burger.svg" alt="" onclick="openNav()"> -->
+            <button class="leftpart__menu-btn" onclick="openNav()">
+              &#9776;
+            </button>
+            <a href="index.html" class="leftpart__logo"> Я.САМ </a>
+          </div>
+          <div class="header__rightpart">
+            <div class="rightpart__contacts">
+              <p class="contacts__number">+7(999)999-99-99</p>
+              <p class="contacts__subarticle">Если есть вопрос - звони</p>
+            </div>
+            <p class="rightpart__login">
+              <a href="login_form.html">Войти</a>/<a href="register_form.html"
+                >Регистрация</a
+              >
+            </p>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="titul-article">
+          <div class="_container titul__article__container">
+            <div class="introduction__article">
+              <div class="left__article">
+                <h1 class="left__article__name">
+                  Платформа для<br />занятых студентов
+                </h1>
+                <div class="left__subarticles">
+                  <div class="left__subarticle">
+                    <img
+                      src="images/checkicon.svg"
+                      alt=""
+                      class="left__checkicons"
+                    />
+                    <h6 class="left__checkparagraph">
+                      Проверка самозанятого в базе
+                    </h6>
+                  </div>
+                  <div class="left__subarticle">
+                    <img
+                      src="images/checkicon.svg"
+                      alt=""
+                      class="left__checkicons"
+                    />
+                    <h6 class="left__checkparagraph">Наличие call-центра</h6>
+                  </div>
+                  <div class="left__subarticle">
+                    <img
+                      src="images/checkicon.svg"
+                      alt=""
+                      class="left__checkicons"
+                    />
+                    <h6 class="left__checkparagraph">
+                      Доступ к обучающему материалу
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="right__article">
+                <a href="#" class="right-customer">Ищу заказчика</a>
+                <a href="catalog.html" class="right-specialist"
+                  >Ищу специалиста</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <div
+          class="titul-img"
+          style="background-image: url(images/titul-top-img.jpg)"
+        ></div>
+        <section class="gradient">
+          <section class="titul-text">
+            <div class="_container titul__text__container">
+              <img src="images/titul-img.png" alt="" class="text__img" />
+              <div class="text__spec">
+                <h3 class="text__spec-text">
+                  Только начали свое дело и не знаете, как собрать клиентскую
+                  базу? Оформите самозанятость, зарегистрируйтесь в "Я.САМ" и
+                  начните получать <span>первые заказы</span>⁤
+                </h3>
+                <a href="register_form.html" class="text__spec-button"
+                  >Хочу стать специалистом</a
+                >
+              </div>
+            </div>
+          </section>
+          <section class="services">
+            <div class="_container services__container">
+              <h2 class="service__title">Популярные услуги на платформе</h2>
+              <div class="service__blocks">
+                <div class="service__block">
+                  <p class="service__block-title">Ремонт</p>
+                  <img
+                    src="images/remont-pic.svg"
+                    alt=""
+                    class="service__block-img"
+                  />
+                </div>
+                <div class="service__block">
+                  <p class="service__block-title">Кондитерские<br />услуги</p>
+                  <img
+                    src="images/conditer-pic.svg"
+                    alt=""
+                    class="service__block-img"
+                    id="conditer"
+                  />
+                </div>
+                <div class="service__block">
+                  <p class="service__block-title">Красота</p>
+                  <img
+                    src="images/cosmetic-pic.svg"
+                    alt=""
+                    class="service__block-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="reviews">
+            <div class="_container reviews__container">
+              <h2 class="reviews__title">Отзывы заказчиков</h2>
+              <div class="reviews__slider">
+                <div
+                  class="swiper-button-prev review__button review__button-prev"
+                ></div>
+                <div class="swiper review__swiper">
+                  <div class="swiper-wrapper review__wrapper">
+                    <div data-hash="slide-1" class="swiper-slide review__slide">
+                      <div class="swiper-lazy">
+                        <div class="review__slide__top">
+                          <div class="review__slide__top-circle"></div>
+                          <p class="review__slide__top-name">Имя Фамилия</p>
+                          <div class="review__slide__top__score">
+                            <div class="review__slide__top__score-num">
+                              4.99
+                            </div>
+                            <img
+                              src="images/star.svg"
+                              alt=""
+                              class="review__slide__top__score-star"
+                            />
+                          </div>
+                        </div>
+                        <p class="review__slide-text">Текст отзыва</p>
+                      </div>
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div data-hash="slide-1" class="swiper-slide review__slide">
+                      <div class="swiper-lazy">
+                        <div class="review__slide__top">
+                          <div class="review__slide__top-circle"></div>
+                          <p class="review__slide__top-name">Имя Фамилия</p>
+                          <div class="review__slide__top__score">
+                            <div class="review__slide__top__score-num">
+                              4.99
+                            </div>
+                            <img
+                              src="images/star.svg"
+                              alt=""
+                              class="review__slide__top__score-star"
+                            />
+                          </div>
+                        </div>
+                        <p class="review__slide-text">Текст отзыва</p>
+                      </div>
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div data-hash="slide-1" class="swiper-slide review__slide">
+                      <div class="swiper-lazy">
+                        <div class="review__slide__top">
+                          <div class="review__slide__top-circle"></div>
+                          <p class="review__slide__top-name">Имя Фамилия</p>
+                          <div class="review__slide__top__score">
+                            <div class="review__slide__top__score-num">
+                              4.99
+                            </div>
+                            <img
+                              src="images/star.svg"
+                              alt=""
+                              class="review__slide__top__score-star"
+                            />
+                          </div>
+                        </div>
+                        <p class="review__slide-text">Текст отзыва</p>
+                      </div>
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div data-hash="slide-1" class="swiper-slide review__slide">
+                      <div class="swiper-lazy">
+                        <div class="review__slide__top">
+                          <div class="review__slide__top-circle"></div>
+                          <p class="review__slide__top-name">Имя Фамилия</p>
+                          <div class="review__slide__top__score">
+                            <div class="review__slide__top__score-num">
+                              4.99
+                            </div>
+                            <img
+                              src="images/star.svg"
+                              alt=""
+                              class="review__slide__top__score-star"
+                            />
+                          </div>
+                        </div>
+                        <p class="review__slide-text">Текст отзыва</p>
+                      </div>
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div data-hash="slide-1" class="swiper-slide review__slide">
+                      <div class="swiper-lazy">
+                        <div class="review__slide__top">
+                          <div class="review__slide__top-circle"></div>
+                          <p class="review__slide__top-name">Имя Фамилия</p>
+                          <div class="review__slide__top__score">
+                            <div class="review__slide__top__score-num">
+                              4.99
+                            </div>
+                            <img
+                              src="images/star.svg"
+                              alt=""
+                              class="review__slide__top__score-star"
+                            />
+                          </div>
+                        </div>
+                        <p class="review__slide-text">Текст отзыва</p>
+                      </div>
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div data-hash="slide-1" class="swiper-slide review__slide">
+                      <div class="swiper-lazy">
+                        <div class="review__slide__top">
+                          <div class="review__slide__top-circle"></div>
+                          <p class="review__slide__top-name">Имя Фамилия</p>
+                          <div class="review__slide__top__score">
+                            <div class="review__slide__top__score-num">
+                              4.99
+                            </div>
+                            <img
+                              src="images/star.svg"
+                              alt=""
+                              class="review__slide__top__score-star"
+                            />
+                          </div>
+                        </div>
+                        <p class="review__slide-text">Текст отзыва</p>
+                      </div>
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div data-hash="slide-1" class="swiper-slide review__slide">
+                      <div class="swiper-lazy">
+                        <div class="review__slide__top">
+                          <div class="review__slide__top-circle"></div>
+                          <p class="review__slide__top-name">Имя Фамилия</p>
+                          <div class="review__slide__top__score">
+                            <div class="review__slide__top__score-num">
+                              4.99
+                            </div>
+                            <img
+                              src="images/star.svg"
+                              alt=""
+                              class="review__slide__top__score-star"
+                            />
+                          </div>
+                        </div>
+                        <p class="review__slide-text">Текст отзыва</p>
+                      </div>
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div data-hash="slide-1" class="swiper-slide review__slide">
+                      <div class="swiper-lazy">
+                        <div class="review__slide__top">
+                          <div class="review__slide__top-circle"></div>
+                          <p class="review__slide__top-name">Имя Фамилия</p>
+                          <div class="review__slide__top__score">
+                            <div class="review__slide__top__score-num">
+                              4.99
+                            </div>
+                            <img
+                              src="images/star.svg"
+                              alt=""
+                              class="review__slide__top__score-star"
+                            />
+                          </div>
+                        </div>
+                        <p class="review__slide-text">Текст отзыва</p>
+                      </div>
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-button-next review__button review__button-next"
+                ></div>
+              </div>
+            </div>
+          </section>
+          <section class="questions">
+            <div class="_container questions__container">
+              <h2 class="questions__title">Часто задаваемые вопросы</h2>
+              <div class="questions__blocks">
+                <div class="question__column question__column-1">
+                  <a
+                    href="questions.html#b1"
+                    class="column__question column-1__question column-1__question-1"
+                    >Что такое НПД и<br />как стать<br />самозанятым</a
+                  >
+                  <a
+                    href="questions.html#b2"
+                    class="column__question column-1__question column-1__question-2"
+                    >Договоры с<br />самозанятыми</a
+                  >
+                  <a
+                    href="questions.html#b3"
+                    class="column__question column-1__question column-1__question-3"
+                    >Ответственность и<br />штрафы
+                  </a>
+                </div>
+                <div class="question__column question__column-2">
+                  <a
+                    href="questions.html#b4"
+                    class="column__question column-2__question column-2__question-1"
+                    >О ставке налога,<br />правилах исчисления<br />и уплаты</a
+                  >
+                  <a
+                    href="questions.html#b5"
+                    class="column__question column-2__question column-2__question-2"
+                    >Что может и не<br />может самозанятый</a
+                  >
+                </div>
+                <div class="question__column question__column-3">
+                  <a
+                    href="questions.html#b6"
+                    class="column__question column-3__question column-3__question-1"
+                    >Бонусы для<br />самозанятых</a
+                  >
+                  <a
+                    href="questions.html#b7"
+                    class="column__question column-3__question column-3__question-2"
+                    >ИП на НПД</a
+                  >
+                  <a
+                    href="questions.html#b8"
+                    class="column__question column-3__question column-3__question-3"
+                    >С чего начать<br />работу</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="command">
+            <div class="_container command__container">
+              <p class="command__title">Команда стартап проекта</p>
+              <div class="command__group">
+                <div class="command__member">
+                  <img src="images/nasta.png" alt="" class="member__img" />
+                  <p class="member__name">Анастасия<br />Гут</p>
+                  <p class="member__description">Контент-менеджер</p>
+                </div>
+                <div class="command__member">
+                  <img src="images/kata.png" alt="" class="member__img" />
+                  <p class="member__name">Екатерина<br />Гарькова</p>
+                  <p class="member__description">Контент-менеджер</p>
+                </div>
+                <div class="command__member">
+                  <img src="images/dasha.png" alt="" class="member__img" />
+                  <p class="member__name">Дарья<br />Григорьева</p>
+                  <p class="member__description">Главный<br />разработчик</p>
+                </div>
+                <div class="command__member">
+                  <img src="images/radmir.png" alt="" class="member__img" />
+                  <p class="member__name">Радмир<br />Юмагулов</p>
+                  <p class="member__description">Frontend-<br />разработчик</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="_container footer__container">
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Исполнителю</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="catalog.html" class="footer__menu-link">Заказчику</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link"
+                  >Пользовательское соглашение</a
+                >
+              </li>
+            </ul>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="infoblock.html" class="footer__menu-link">Инфоблок</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Блог/Журнал</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="questions.html" class="footer__menu-link"
+                  >Часто задаваемые вопросы</a
+                >
+              </li>
+            </ul>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Контакты</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Партнеры</a>
+              </li>
+              <li class="footer__menu-item">
+                <ul class="footer__menu-item-piclist">
+                  <li class="footer__menu-item-picitem">
+                    <a
+                      href="https://vk.com/nvsulive"
+                      class="footer__menu-item-piclink"
+                      ><img
+                        class="footer__menu-item-piclink__img"
+                        src="images/vk.svg"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li class="footer__menu-item-picitem">
+                    <a
+                      href="https://vk.com/away.php?to=https%3A%2F%2Ft.me%2Fnvsunv&cc_key="
+                      class="footer__menu-item-piclink"
+                      ><img
+                        class="footer__menu-item-piclink__img"
+                        src="images/telegram.svg"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li class="footer__menu-item-picitem">
+                    <a href="https://nvsu.ru/" class="footer__menu-item-piclink"
+                      ><img
+                        class="footer__menu-item-piclink__img"
+                        src="images/nvsu.svg"
+                        alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <p class="footer__copy">
+            Проект создан при поддержке ФГБОУ ВО “Нижневартовский
+            государственный университет”
+          </p>
+        </div>
+      </footer>
+      <div class="_container nav__container">
+        <nav class="nav__menu" id="e1">
+          <ul class="menu__list">
+            <li id="non" class="menu__item">
+              <a href="login_form.html">Войти</a>/<a href="register_form.html"
+                >Зарегистрироваться</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="catalog.html"
+                ><div class="menu__item-block">Заказчикам</div></a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#"><div class="menu__item-block">Самозанятым</div></a>
+            </li>
+            <li class="menu__item">
+              <a href="infoblock.html"
+                ><div class="menu__item-block">Инфоблок</div></a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#"><div class="menu__item-block">Партнеры</div></a>
+            </li>
+            <li class="menu__item">
+              <a href="questions.html"
+                ><div class="menu__item-block">Часто задаваемые вопросы</div></a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#"
+                ><div class="menu__item-block">Связаться с нами</div></a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#"><div class="menu__item-block">Блог/Журнал</div></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
