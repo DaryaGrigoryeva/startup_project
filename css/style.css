@@ -175,6 +175,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: 8px;
 }
 .catalog-btn {
   display: flex;
@@ -187,6 +188,7 @@ body {
   font-size: 20px;
   font-weight: 400;
   background-color: #ffa98d;
+  border-radius: 10px;
 }
 .catalog-btn button {
   display: flex;
@@ -356,7 +358,7 @@ body {
   padding: 0 15px;
 }
 .catalog__search-btn {
-  background: #ffa98d;
+  background: #1a91ff;
   margin-right: 20px;
   margin-left: 28px;
 }
@@ -374,6 +376,7 @@ body {
   padding-right: 40px;
   padding-top: 40px;
   font-size: 20px;
+  border-right: 1px solid #ebebeb;
 }
 .filter__title-cost {
   margin-bottom: 10px;
